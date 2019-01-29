@@ -1,6 +1,7 @@
 -module(dia).
 -export([main/0]).
 
+% -spec erlmap([number()], fun((number()) -> string())) -> [string()].
 -spec erlmap([number()], fun((number()) -> number())) -> [number()].
 erlmap([], _) -> [];
 erlmap([Head | Tail], F) ->
